@@ -1,0 +1,27 @@
+{
+  "name": "proj-graphql",
+  "version": "1.0.0",
+  "description": "aplicacion de graphql",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db:migrate": "knex migrate:latest --knexfile=db/knexfile.js",
+    "db:seed" : "knex seed:run --knexfile=db/knexfile.js"
+  },
+  "author": "ivanp",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "casual": "^1.5.14",
+    "express": "^4.15.4",
+    "graphql": "^0.10.5",
+    "graphql-server-express": "^1.1.0",
+    "graphql-tools": "^1.2.1",
+    "knex": "^0.13.0",
+    "objection": "^0.8.7",
+    "sqlite3": "^3.1.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
